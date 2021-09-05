@@ -6,13 +6,14 @@ import java.util.List;
 public class Post {
     private long id;
     private String content;
-    private List<Tag> tags = new ArrayList<>();
+    private List<Tag> tags;
     private PostStatus status;
 
     public Post(long id, String content, PostStatus status) {
         this.id = id;
         this.content = content;
         this.status = status;
+        this.tags = new ArrayList<>();
     }
 
     public long getId() {

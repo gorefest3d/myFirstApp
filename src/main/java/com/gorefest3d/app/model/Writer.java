@@ -6,11 +6,12 @@ import java.util.List;
 public class Writer {
     private long id;
     private String name;
-    private List<Post> posts = new ArrayList<>();
+    private List<Post> posts;
 
     public Writer(long id, String name) {
         this.id = id;
         this.name = name;
+        this.posts = new ArrayList<>();
     }
 
     public long getId() {
