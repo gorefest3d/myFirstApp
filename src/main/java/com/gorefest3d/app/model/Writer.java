@@ -8,10 +8,10 @@ public class Writer {
     private String name;
     private List<Post> posts;
 
-    public Writer(long id, String name) {
+    public Writer(long id, String name, List<Post> posts) {
         this.id = id;
         this.name = name;
-        this.posts = new ArrayList<>();
+        this.posts = posts;
     }
 
     public long getId() {

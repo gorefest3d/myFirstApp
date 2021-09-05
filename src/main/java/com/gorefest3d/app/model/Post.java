@@ -1,6 +1,7 @@
 package main.java.com.gorefest3d.app.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Post {
@@ -9,12 +10,13 @@ public class Post {
     private List<Tag> tags;
     private PostStatus status;
 
-    public Post(long id, String content, PostStatus status) {
+    public Post(long id, String content, List<Tag> tags, PostStatus status) {
         this.id = id;
         this.content = content;
+        this.tags = tags;
         this.status = status;
-        this.tags = new ArrayList<>();
     }
+
 
     public long getId() {
         return id;
